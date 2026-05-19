@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Позвони Гребенюку — Telegram prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="prototype-shell">
+      <section class="phone" aria-label="Кликабельный прототип Telegram-бота">
+        <div class="status-bar">
+          <span>21:41</span>
+          <span>signal&nbsp; wifi&nbsp; 61</span>
+        </div>
+
+        <header class="telegram-header" data-mode="chat">
+          <button class="back-pill" type="button" data-action="back">&lt; 162</button>
+          <div class="bot-title">
+            <strong>Позвони Гребенюку</strong>
+            <span>НейроГребенюк</span>
+          </div>
+          <button class="avatar" type="button" data-action="go" data-target="home">PG</button>
+        </header>
+
+        <div class="web-header" data-mode="web">
+          <button class="web-close" type="button" data-action="go" data-target="form">x</button>
+          <div class="web-url">orders.cloudpayments.ru</div>
+          <button class="web-more" type="button" aria-label="Меню оплаты">...</button>
+        </div>
+
+        <div class="screen" id="screen" aria-live="polite"></div>
+
+        <footer class="chat-footer" data-mode="chat">
+          <button class="menu-button" type="button" data-action="menu">Menu</button>
+          <div class="message-input">Message</div>
+          <button class="mic-button" type="button">mic</button>
+        </footer>
+      </section>
+
+      <aside class="side-panel">
+        <div>
+          <p class="eyebrow">prototype</p>
+          <h1>Позвони Гребенюку — чат-бот в телеграм</h1>
+          <p>
+            Кликабельный путь из лендинга в бот: бот принимает данные,
+            проводит оплату, даёт номер для звонка и возвращает отчёт.
+          </p>
+        </div>
+
+        <nav class="step-nav" aria-label="Быстрый переход по экранам">
+          <button type="button" data-action="go" data-target="home">1. Старт</button>
+          <button type="button" data-action="go" data-target="postStart">2. Вход</button>
+          <button type="button" data-action="go" data-target="formIntro">3. Данные</button>
+          <button type="button" data-action="go" data-target="price">4. Оплата</button>
+          <button type="button" data-action="go" data-target="emailCheck">5. Email</button>
+          <button type="button" data-action="go" data-target="status">6. Статус</button>
+          <button type="button" data-action="go" data-target="report">7. Отчёт</button>
+          <button type="button" data-action="go" data-target="continue">8. Повтор</button>
+          <button type="button" data-action="go" data-target="paymentFailed">9. Ошибка оплаты</button>
+        </nav>
+
+        <div class="scenario-card">
+          <strong>Данные прототипа</strong>
+          <span id="sideState">Пользователь ещё не заполнил форму.</span>
+        </div>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
