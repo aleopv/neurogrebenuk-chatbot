@@ -19,10 +19,7 @@ const screens = {
       <div class="start-screen">
         <header class="start-appbar">
           <div class="start-avatar" aria-hidden="true"></div>
-          <div class="start-title">
-            <strong>Позвони Гребенюку</strong>
-            <span>bot</span>
-          </div>
+          <img class="start-title-logo" src="assets/pozvoni_grebenyuku_logo_transparent.png" alt="Позвони Гребенюку" />
           <button class="start-more" type="button">•••</button>
         </header>
 

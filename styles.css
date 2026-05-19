@@ -302,25 +302,12 @@ button {
   content: none;
 }
 
-.start-title {
-  display: grid;
-  gap: 2px;
-  min-width: 0;
-}
-
-.start-title strong {
-  overflow: hidden;
-  color: #111;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.15;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.start-title span {
-  color: #8e8e93;
-  font-size: 17px;
+.start-title-logo {
+  display: block;
+  width: min(100%, 194px);
+  height: auto;
+  align-self: center;
+  justify-self: start;
 }
 
 .start-more {
