@@ -19,14 +19,14 @@ const screens = {
       <div class="start-screen">
         <header class="start-appbar">
           <div class="start-avatar" aria-hidden="true"></div>
-          <img class="start-title-logo" src="assets/pozvoni_grebenyuku_logo_transparent.png" alt="Позвони Гребенюку" />
+          <img class="start-title-logo" src="assets/pozvoni_grebenyuku_logo_transparent.png?v=2" alt="Позвони Гребенюку" />
           <button class="start-more" type="button">•••</button>
         </header>
 
         <div class="start-field">
           <section class="start-card">
             <div class="start-media">
-              <img class="start-logo" src="assets/pozvoni_grebenyuku_logo_transparent.png" alt="Позвони Гребенюку" />
+              <img class="start-logo" src="assets/pozvoni_grebenyuku_logo_transparent.png?v=2" alt="Позвони Гребенюку" />
               <div class="start-person" aria-hidden="true"></div>
             </div>
             <p>
